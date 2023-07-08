@@ -1,0 +1,22 @@
+CREATE TABLE Jersey (id INTEGER           PRIMARY KEY, name TEXT, quantity INTEGER,    Price INTEGER, aisle INTEGER);
+INSERT INTO Jersey VALUES(1,                  "Kobe Byrant" , 56, 7, 4 );
+INSERT INTO Jersey VALUES(2,                  "Lebron James" , 1, 2, 9);
+INSERT INTO Jersey VALUES(3,  "Carmelo         Anthony", 2, 2, 4);
+INSERT INTO Jersey VALUES(4,  "Chris           Paul" , 1, 12, 4);
+INSERT INTO Jersey VALUES(5,  "KEVIN           Durant" , 3, 2, 3);
+INSERT INTO Jersey VALUES(6,                   "Wilt Chamberlin" , 1, 4, 7);
+INSERT INTO Jersey VALUES(7,                    "Bill Russell" , 3, 5, 9);
+INSERT INTO Jersey VALUES(8,                  "Magic Johnson", 8, 9, 4);
+INSERT INTO Jersey VALUES(9,                  "Larry Bird" , 9, 2, 2);                       
+INSERT INTO Jersey VALUES(10,                 "James Worthy" , 10, 15, 32);   
+INSERT INTO Jersey VALUES(11,                 "Kevin Mchale" , 13, 8, 5);
+INSERT INTO Jersey VALUES(12,                 "Micheal Jordan" , 12, 9, 6);
+INSERT INTO Jersey Values(13,                 "Scottie Pippen" , 1, 2, 4);
+INSERT INTO Jersey Values(14,                 "Steve Kerr" , 2, 23, 5);
+INSERT INTO Jersey Values(15,                 "Dennis Rodman" , 3, 5, 4); 
+
+SELECT aisle, SUM(quantity) FROM              Jersey GROUP BY aisle;
+
+--- display the database ordered by quantity and aisle.
+SELECT * FROM Jersey
+
